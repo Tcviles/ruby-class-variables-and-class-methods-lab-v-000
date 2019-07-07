@@ -25,4 +25,10 @@ class Song
     Songs.each {|song| genre_count[song.genre]+=1}
     return genre_count
   end
+
+  def self.artist_count
+    artist_count = {}
+    Songs.each {|song| artist_count[song.artist]+=1}
+    return artist_count
+  end
 end
