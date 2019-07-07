@@ -8,7 +8,7 @@ class Song
     Songs << self
   end
 
-  def self.count 
+  def self.count
     Songs.count
   end
 
