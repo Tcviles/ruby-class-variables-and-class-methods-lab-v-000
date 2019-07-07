@@ -13,8 +13,6 @@ class Song
   end
 
   def self.artists
-    Songs.map do |song|
-      song.artist
-    end
+    Songs.map {|song| song.artist}
   end
 end
