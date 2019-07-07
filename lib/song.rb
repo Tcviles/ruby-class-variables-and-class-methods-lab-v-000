@@ -7,3 +7,14 @@ class Song
     @genre = genre
     Songs << self
   end
+
+  def self.count 
+    Songs.count
+  end
+
+  def self.artists
+    Songs.map do |song|
+      song.artist
+    end
+  end
+end
