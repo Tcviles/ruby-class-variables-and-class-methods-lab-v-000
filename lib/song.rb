@@ -20,11 +20,7 @@ class Song
   end
 
   def self.artists
-    Songs.map {|song| song.artist}
-  end
-
-  def self.genres
-    Songs.map {|song| song.genre}
+    @@artists
   end
 
   def self.genre_count
