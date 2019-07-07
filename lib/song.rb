@@ -15,4 +15,14 @@ class Song
   def self.artists
     Songs.map {|song| song.artist}
   end
+
+  def self.genres
+    Songs.map {|song| song.genre}
+  end
+
+  def self.genre_count
+    genre_count = {}
+    Songs.each {|song| genre_count[song.genre]+=1}
+    return genre_count
+  end
 end
